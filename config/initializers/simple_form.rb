@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require 'simple_form'
 #
 # Uncomment this and change the path if necessary to include your own
 # components.

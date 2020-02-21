@@ -1,0 +1,32 @@
+
+<div class="navbar">
+  <p></p>
+</div>
+
+<div class="banner">
+  <h1>Mix your Cocktail</h1>
+</div>
+
+<div class="container">
+
+  <div class="cards row ">
+    <%@cocktails.each do |cocktail| %>
+    <div class="col-3">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1570598912132-0ba1dc952b7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+        <div class="card-title">
+         <%=  link_to cocktail.name,  cocktail_path(cocktail), class: "cocktail-name" %>
+       </div>
+     </div>
+   </div>
+   <% end %>
+ </div>
+
+ <div class="btn btn-primary home page">
+  <%= link_to "Create your own Cocktail",  new_cocktail_path, class: "text-white" %>
+</div>
+
+
+</div>
+
+

@@ -1,0 +1,54 @@
+// Import your components CSS files here.
+@import "alert";
+@import "avatar";
+@import "navbar";
+@import "banner";
+@import "cards";
+@import "show";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+
+.container{
+  text-align: center;
+  position:relative;
+}
+
+li {
+
+  list-style: none;
+  .cocktail-name{
+    padding: 0;
+    color: #6fb38f;
+
+    &:hover {
+      text-decoration: none;
+      color: #6fb38f;
+
+    }
+  }
+}
+a{
+  padding: 0;
+  color: #6fb38f;
+
+}
+
+.btn-primary{
+  background-color:#6fb38f ;
+  border-color: #6fb38f;
+  position: relative;
+  left: 104.5px;
+  transform: translate(-50%, 0);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btn-primary:hover {
+      background-color: #6a8caf;
+      border-color: #6fb38f;
+
+  }
+
+.text-white {
+  color: #95edb1;
+}

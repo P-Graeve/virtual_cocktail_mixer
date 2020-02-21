@@ -1,0 +1,23 @@
+<div class="navbar"></div>
+
+<%=@cocktail.name%>
+
+
+
+<%@cocktail.doses.each do |dose|%>
+<p><%=dose.description%>
+<%= dose.ingredient.name%></p>
+<em><%= link_to "Delete Dose", dose_path(dose), class: 'delte-dose', method: :delete, data: {confirm: 'Are you sure?'}%></em>
+
+<%end%>
+
+
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
+  <%= f.submit %>
+<% end %>
+
+<div class="btn btn-info btn-sm">
+<%= link_to "Go back to your bar", cocktails_path, class: "text-white" %>
+</div>

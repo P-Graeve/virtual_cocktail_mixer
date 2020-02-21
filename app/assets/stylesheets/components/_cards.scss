@@ -1,0 +1,54 @@
+
+.cards{
+  border-color: black;
+  border-radius: 8px;
+  padding-top: 40px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+
+
+
+}
+.card{
+  border-radius: 8px;
+  box-shadow: bottom;
+  margin-bottom: 15px;
+  border-radius: 8px;
+
+}
+
+.card-title {
+
+  background-size: cover;
+  background-position: center;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: white;
+  color: #285767;
+  align-items: center;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration:none;
+
+
+
+}
+
+.cards img {
+  height: 200px;
+  width: 100%;
+  object-fit: fill;
+  border-radius-top: 5px;
+
+}
+
