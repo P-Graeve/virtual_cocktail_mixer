@@ -22,10 +22,10 @@ ingredients.each do |ingredient|
   Ingredient.create(name: ingredient)
 end
 
-Cocktail.create(name: "Gin Tonic")
-Cocktail.create(name: "Vodka")
-Cocktail.create(name: "Aperol")
-Cocktail.create(name: "Strawberry schnapps")
-Cocktail.create(name: "Vodka orange")
-Cocktail.create(name: "Water")
-Cocktail.create(name: "Vodka lemon")
+# Cocktail.create(name: "Gin Tonic")
+# Cocktail.create(name: "Vodka")
+# Cocktail.create(name: "Aperol")
+# Cocktail.create(name: "Strawberry schnapps")
+# Cocktail.create(name: "Vodka orange")
+# Cocktail.create(name: "Water")
+# Cocktail.create(name: "Vodka lemon")

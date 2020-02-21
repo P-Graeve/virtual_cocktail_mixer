@@ -1,23 +1,35 @@
 <div class="navbar"></div>
 
-<%=@cocktail.name%>
+
+<div class="container-show">
+  <div class="row " >
+    <div class="col-3 mt-3">
+      <%=@cocktail.name%>
 
 
 
-<%@cocktail.doses.each do |dose|%>
-<p><%=dose.description%>
-<%= dose.ingredient.name%></p>
-<em><%= link_to "Delete Dose", dose_path(dose), class: 'delte-dose', method: :delete, data: {confirm: 'Are you sure?'}%></em>
+      <%@cocktail.doses.each do |dose|%>
+      <p><%=dose.description%>
+        <%= dose.ingredient.name%></p>
+        <em><%= link_to "Delete Dose", dose_path(dose), class: 'delte-dose', method: :delete, data: {confirm: 'Are you sure?'}%></em>
 
-<%end%>
+        <%end%>
 
 
-<%= simple_form_for([@cocktail, @dose]) do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.submit %>
-<% end %>
+        <%= simple_form_for([@cocktail, @dose]) do |f| %>
+        <%= f.input :description %>
+        <%= f.association :ingredient %>
+        <%= f.submit %>
+        <% end %>
 
-<div class="btn btn-info btn-sm">
-<%= link_to "Go back to your bar", cocktails_path, class: "text-white" %>
-</div>
+        <div class="btn btn-info btn-sm mt-3">
+          <%= link_to "Go back to your bar", cocktails_path, class: "text-white" %>
+        </div>
+      </div>
+      <div class="coacktail-image col-4 mt-3">
+        <%=cl_image_tag(@cocktail.photo.key, width: 400, height: 300, crop: :fill) %>
+      </div>
+
+
+    </div>
+  </div>
